@@ -1,6 +1,7 @@
 var http = require('http');
 var mustache = require('mustache');
 var randomnum = require('./random_number')
+var math_lib = require('./md_math_lib')
 requestHandler = function(req, res) {
 	console.log('handler');
 
@@ -12,7 +13,7 @@ requestHandler = function(req, res) {
 						  }
 						)
 			random1 = randomnum();
-			res.end("welcome home"+result+" "+random1);
+			res.end("welcome home"+" "+result+" "+random1+" "+math_lib(4,5,'-'));
 	} else {
 		res.end('hii');
 	}
