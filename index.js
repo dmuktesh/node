@@ -13,7 +13,7 @@ requestHandler = function(req, res) {
 						  }
 						)
 			random1 = randomnum();
-			res.end("welcome home"+" "+result+" "+random1+" "+math_lib(4,5,'-'));
+			res.end("welcome home"+" "+result+" "+random1+" "+math_lib(4,5,'%'));
 	} else {
 		res.end('hii');
 	}

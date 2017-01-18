@@ -1,15 +1,15 @@
-add = function(a,b,c){
-if(c=='+')
-return a+b;
-else if(c=='-')
-return a-b;
-else if(c=='*')
-return a*b;
-else if(c=='/')
-return a/b;
-else if(c=='%')
-return a%b;
+res = function(number1,number2,operation){
+if(operation=='+')
+return number1+number2;
+else if(operation=='-')
+return number1-number2;
+else if(operation=='*')
+return number1*number2;
+else if(operation=='/')
+return anumber1/number2;
+else if(operation=='%')
+return number1%number2;
 else
 return 'undefined operation'
 }
-module.exports = add;
+module.exports = res;
